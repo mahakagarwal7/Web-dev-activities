@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .diamond{
+            margin:auto;
+            width:0;
+            height:0;
+            border:50px solid transparent;
+            border-bottom:70px solid #4ecdc4;
+            margin:20px;
+            position:relative;
+        }
+        .diamond:after{
+            content: '';
+            position: absolute;
+            left:-50px;
+            top:70px;
+            width:0;
+            height:0;
+            border:50px solid transparent;
+            border-top: 70px solid #4ecdc4;
+        }
+    </style>
+</head>
+<body>
+    <div class="diamond"></div>
+</body>
+</html>
